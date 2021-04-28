@@ -38,6 +38,26 @@ variable "min_size" {
   type        = string
 }
 
+variable "syslog_instance_type" {
+  description = "AWS instance type to use for syslog nodes."
+  type        = string
+}
+
+variable "syslog_desired_capacity" {
+  description = "Desired number of syslog nodes."
+  type        = string
+}
+
+variable "syslog_max_size" {
+  description = "Maximum number of syslog nodes."
+  type        = string
+}
+
+variable "syslog_min_size" {
+  description = "Minimum number of syslog nodes."
+  type        = string
+}
+
 variable "root_device_encrypted" {
   type        = bool
   default     = true
