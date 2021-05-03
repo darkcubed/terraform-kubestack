@@ -24,6 +24,14 @@ locals {
 
   cluster_min_size = local.cfg["cluster_min_size"]
 
+  syslog_instance_type = local.cfg["syslog_instance_type"]
+
+  syslog_desired_capacity = local.cfg["syslog_desired_capacity"]
+
+  syslog_max_size = local.cfg["syslog_max_size"]
+
+  syslog_min_size = local.cfg["syslog_min_size"]
+
   worker_root_device_volume_size = lookup(local.cfg, "worker_root_device_volume_size", null)
   worker_root_device_encrypted   = lookup(local.cfg, "worker_root_device_encrypted", null)
 
